@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+</head>
+
+<body onload="fetchdata()">
+    <div class="body">
+        <div class="mydata">
+            <h1>MY DATA</h1>
+        </div>
+        <div class="form">
+
+            <h2>Name
+                <input type="text" value="" name="name" placeholder="enter name" id="name"  />
+            </h2>
+            <h2>Email Id
+                <input type="text" value="" name="email" placeholder="enter email" id="email" />
+            </h2>
+            <h2>Mob No
+                <input type="number" value="" name="mobno" placeholder="enter mobno" id="mobno" />
+            </h2>
+            <h2>Address
+                <input type="text" value="" name="address" placeholder="enter address" id="address" />
+            </h2>
+
+            <button onclick="mydata()">SAVE</button><br><br>
+            <button onclick="logout()">LOGOUT</button>
+        </div>
+
+    </div>
+    <table   id="customers">
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>mobile</th>
+              <th>Address</th>
+            </tr>
+            </thead>
+            <tbody id="tablebody">
+                    <!-- <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                          </tr> -->
+            </tbody>
+           
+       </table>   
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="/js/mydata.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.17.1/axios.js"></script>
+    <script src="/js/fetchdata.js"></script>
+    <script src="/js/logout.js"></script>
+</body>
+<script>
+  
+</script>
+</html>
